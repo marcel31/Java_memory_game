@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="488.0" prefWidth="660.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.registrationform.GameController">
+   <center>
+      <Pane fx:id="pane" BorderPane.alignment="CENTER">
+         <children>
+            <HBox spacing="49.0">
+               <children>
+                  <Pane>
+                     <children>
+                        <VBox spacing="50.0">
+                           <children>
+                              <HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+                                 <children>
+                                    <Button fx:id="button" mnemonicParsing="false" onAction="#handleSubmitButtonAction" text="Salir" />
+                                    <Button fx:id="configButton" mnemonicParsing="false" onAction="#goToConfigSetting" text="Account Config" />
+                                 </children>
+                              </HBox>
+                              <Pane fx:id="luigi" minHeight="200.0" prefWidth="200.0" />
+                           </children>
+                        </VBox>
+                        <Label layoutX="14.0" layoutY="276.0" text="Puntuacion:" />
+                        <Label fx:id="puntuacion" layoutX="86.0" layoutY="276.0" text="0" />
+                     </children>
+                     <HBox.margin>
+                        <Insets left="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Pane>
+                  <Pane>
+                     <children>
+                        <GridPane fx:id="grid" hgap="10.0" style="-fx-background-image: url(&quot;https://edencoding.com/wp-content/uploads/2021/03/layer_01_1920x1080.png&quot;);" vgap="10.0">
+                          <columnConstraints>
+                              <ColumnConstraints hgrow="ALWAYS" />
+                            <ColumnConstraints hgrow="ALWAYS" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints vgrow="ALWAYS" />
+                            <RowConstraints vgrow="ALWAYS" />
+                          </rowConstraints>
+                           <children>
+                               <Label fx:id="lbl000" alignment="CENTER" prefHeight="200.0" prefWidth="200.0" text="Label" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
+                                 <font>
+                                    <Font size="60.0" />
+                                 </font>
+                              </Label>
+                               <Label fx:id="lbl011" alignment="CENTER" prefHeight="200.0" prefWidth="200.0" text="Label" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
+                                 <font>
+                                    <Font size="60.0" />
+                                 </font>
+                              </Label>
+                               <Label fx:id="lbl102" alignment="CENTER" prefHeight="200.0" prefWidth="200.0" text="Label" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS">
+                                 <font>
+                                    <Font size="60.0" />
+                                 </font>
+                              </Label>
+                               <Label fx:id="lbl113" alignment="CENTER" prefHeight="200.0" prefWidth="200.0" text="Label" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS">
+                                 <font>
+                                    <Font size="60.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </GridPane>
+                     </children>
+                     <HBox.margin>
+                        <Insets top="40.0" />
+                     </HBox.margin>
+                  </Pane>
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>
